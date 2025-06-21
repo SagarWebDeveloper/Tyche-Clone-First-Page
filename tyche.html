@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyche.com</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap');
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        .wrapper{
+            height: 100vh;
+            width: 90%;
+            background-color: black;
+            margin: auto;
+            display: flex;
+            align-items: center;            
+            flex-direction: column;
+        }
+        .head{
+            height: 6vh;
+            width: 100%;
+            background-color: rgb(67, 42, 42);
+            display: flex;
+            padding: 1% 4%;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 1px solid transparent; */
+
+
+        }
+        .head a{
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            transition: 1s ease;
+            border-radius: 5px;
+            
+        }
+        .head a:hover{
+            background-color: orange;
+            color: black;
+            cursor: pointer;
+        }
+
+        input{padding: 5px;}
+
+        
+        #search{
+            color: white;
+            font-weight: 700;
+            font: 1rem sans-serif;
+            border-right: none;
+            border-radius: 5px;
+            background-color: black;
+        }
+        .button{
+            font: 1rem sans-sarif;
+            font-weight: 600;
+            background-color: orange;
+            color: white;
+            transition: 1s ease-out;
+            border-radius: 5px;
+        }
+        .button:hover{
+            background-color: black;}
+        .mycart
+            {
+            font-size: 1.5rem;
+            background-color: orange;
+            padding: 5px;
+            
+        }
+        .mycart a{color:black;}
+        .navbar{
+            height: 20vh;
+            width:100% ;
+            background-color: rgb(40, 28, 28);
+        }
+        .title{
+            background-color: black;
+            font-size: 3rem;
+            color: orange;
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            padding-left: 2%;
+        }
+        
+        
+        .menu ul{
+            margin-top: 15px;
+            display: flex;
+            gap: 40px;
+            margin-left: 6rem;
+            
+        }
+        .menu ul li{
+            list-style: none;
+            color: white;
+            
+            /* padding: 0 2%; */
+            /* margin-right: 25vh; */
+
+        }
+        .menu ul li a{
+            padding: 5% 5%;
+            font-family: Verdana;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            
+        }
+        .menu ul li a:hover{
+            color: orange;
+            background-color: black;
+            border: 1px solid orange;
+            border-radius: 5px;
+        }
+        
+        .banner{
+            height: 64vh;
+            width: 90%;
+            background-image: url(2.jpeg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .details{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .details h2{
+            
+            color: orange;
+            font-family: Arial;
+            font-size: 4.5rem;
+            font-weight: 550;
+            text-align: center;
+            position: relative;
+            top: 50vh;
+            left: 30vh;
+
+        }
+        .s2017{
+            color: white;
+            font-size: 5rem;
+            font-family: Georgia;
+            position: absolute;
+            top: 36vh;
+            left: 27vh;
+        }
+        .p2{
+            color: orange;
+            font: 2em Times roman;
+            font-weight: 600;
+            position: absolute;
+            top: 50vh;
+            left: 24vh;
+        }
+        .p3{
+            color: wheat;
+            position: absolute;
+            top: 60vh;
+            left: 25vh;
+            font-size: 1.8rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .p4{
+            color: white;
+            font-family: 'Gill Sans';
+            font-size: 24px;
+            position: relative;
+            text-align: center;
+            top: 12vh;            
+        }
+        .mic{
+            color: orange;
+            position: absolute;
+            top: 55vh;
+            left: 139vh;
+            font-size: 2rem;
+        }
+        
+        .footer{
+            height: 8vh;
+            width: 100%;
+            background-color: orange;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3%;
+            
+        }
+        .footer p{
+            text-align: center;
+            color: white;}
+        .footer a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer a:hover{
+            color: black;
+        }
+            /* ----------- Responsive Design ----------- */
+
+                /* Tablets (768px and down) */
+                @media (max-width: 1080px) {
+                  .logo{
+                    text-align: center;
+                    
+                    .head{
+                        height: 100vh;
+                    }
+                    #search{
+                        font-size: 1px;
+                    }
+                    .menu{
+                        border: 1px solid transparent;
+                        margin-left: 200px;
+                    }
+                    .mic{
+                        margin-top: 50px;
+                    }
+                  }
+                }
+
+                /* Mobile phones (480px and down) */
+                @media (max-width: 480px) {
+                }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="cnt"><a href="mailto:tycheindia.com"><i class="fa-solid fa-envelope"></i>&nbsp;tycheindia.com</a>
+            </div>
+            <div class="search">
+                <form method="post">
+                    <input type="text" name="search" id="search" placeholder="Search your outfit...">
+                    <input class="button" type="button" value="Search">
+                </form>
+        </div>  
+        <div class="account">
+            <a href="#">
+                <i class="fa-solid fa-user"></i>&nbsp;
+                Account</a>
+        </div>
+        <div class="mycart">
+           <a href="#"><i class="fa-solid fa-cart-shopping"></i>My Cart</a> 
+        </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <h1 class="title"><i class="fas fa-bag-shopping"></i>&nbsp;Tyche</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Shop</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="details">
+                <h2>
+                    WELCOME TO TYCHE
+                </h2>
+                <br>
+                <span class="s2017"><p>2017</p></span>
+                <br>
+                <span class="p2">
+                    <p>Autumn Collection</p>
+                </span>
+                <span class="p3">
+                    <p>Since love grows <br>&nbsp;&nbsp; within you <br> so beauty grows...</p>
+                </span>
+                <span class="p4"><p>“If roses could talk,<br> they would not boast of their beauty,<br> because they know that  <br> they have always been beautiful.”</p>
+                </span>
+                    <span class="mic">
+                        <p>
+                        ― Michael Bassey Johnson
+                        </p>
+                </span>
+                    
+            </div>
+        </div>
+        <div class="footer">
+            <div class="Shiping">
+                <a href="#">
+                    <h4> 
+                        <i class="fa-solid fa-earth-americas"></i>
+                        &nbsp;FREE SHIPPING</h4>
+                </a>
+                <P>On all orders above 90$</P>
+            </div>
+            <div class="Call">
+                <a href="tel:+8439998850">
+                    <h4>
+                        <i class="fa-solid fa-mobile"></i>
+                        &nbsp;CALL US ANYTIME</h4>
+                </a>
+                <P>8439998850</P>
+            </div>
+            <div class="Our-location">
+                <a href="#">
+                    <h4>
+                        <i class="fa-solid fa-location-dot"></i>
+                        &nbsp;OUR LOCATION</h4>
+                </a>
+                <P>557-6308 Lacinuia Road-NYC</P>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
